@@ -1,5 +1,10 @@
-const config = {
-  plugins: ["@tailwindcss/postcss"],
-};
+// postcss.config.js
+// This file configures PostCSS, which processes the CSS with plugins like Tailwind.
+// This is a standard setup for a Next.js project.
 
-export default config;
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
